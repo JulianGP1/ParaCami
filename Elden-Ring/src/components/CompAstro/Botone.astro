@@ -1,0 +1,10 @@
+---
+const { del = false,extraClass = '' } = Astro.props;
+---
+<div class="h-[50px] content-center w-auto py-2 px-5 border border-white rounded-md select-none"       class:list={{
+    "bg-[#c29d53ff] hover:bg-transparent select-none": del,  
+    "": !del  
+}}
+>
+    <slot name="cont"></slot>
+</div>

@@ -1,0 +1,28 @@
+--- 
+interface Props {
+  title: string;
+  description?: string;
+}
+import Headd from '../components/CompAstro/Headd.astro';
+const { title, description } = Astro.props;
+
+---
+
+<!doctype html>
+<meta charset="UTF-8" />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<html lang="es">
+
+  <body class="bg-[#0b2121ff] w-screen">
+      
+      
+    <slot />    
+   
+    
+  
+  </body>
+</html>

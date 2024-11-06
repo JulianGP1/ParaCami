@@ -1,0 +1,48 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Headd from "../components/CompAstro/Headd.astro";
+import Botonshop from "../components/ComVue/Botonshop.vue";
+---
+
+<Layout title="Shadow Of The Erdtree">
+    <Headd></Headd>
+    <div class="bg-[url('img2.jpg')] h-[400px] bg-cover bg-center ">
+
+    </div>
+    <div class="bg-[url('fondofuego.jpg')] bg-fixed h-[1200px] bg-cover bg-center  ">
+        <img src="SOT.png" class="px-[32%] pt-[7%]" alt="">
+        <div class="c pt-24 px-[120px] h-[800px] flex">
+            <div class="text-white h-[800px]">
+                <h1 class="text-[#E1C689] font-bold text-[30px]">Reniega de la Gracia</h1>
+                <h1 class="py-4 text-white text-[20px]">La Tierra Sombría. Un lugar ensombrecido por el Árbol Áureo. <br>Donde se produjo la primera venida de la diosa Márika. </h1>
+                <h1 class="pb-4 text-white text-[20px]">Un reino purgado en una batalla olvidada. <br>
+                    Y calcinado por la llama de Messmer.</h1>
+                <h1 class="pb-4 text-white text-[20px]"> Fue hacia estas tierras donde Miquella se dirigió.
+                    Se despojó de su propia carne, de su fuerza y su legado.
+                    De todo lo que era dorado.</h1>
+                <h1 class="pb-4 text-white text-[20px]">Y ahora Miquella aguarda el retorno de su señor prometido.</h1>
+                <Botonshop  class="pb-4 text-white text-[20px] w-[200px] ">
+                    <h1 slot="text-mid" class="pt-2">SHOP NOW</h1>
+                </Botonshop>
+            </div>
+
+            <div>
+                <iframe class="h-[300px] ml-8 w-[550px] rounded-lg shadow-black shadow-md" src="https://www.youtube.com/embed/qLZenOn7WUo" title="ELDEN RING Shadow of the Erdtree | Official Gameplay Reveal Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>     
+            </div>
+        </div>
+        <div class="flex items-center ml-[40%] px-3 bg-[url('losa.png')] font-semibold rounded-md h-[60px] w-[400px] bg-opacity-50 justify-between ">
+            <div class="boder border-black border-r-2 justify-items-center h-full flex items-center w-[80px]">
+                            <h1 class="bg-[url('losa.png')] rounded-l-md  pl-4  ">LORE</h1>
+    
+            </div>
+            <div class="boder border-black border-r-2 h-full flex items-center pr-10">
+                                <h1 class="bg-[url('losa.png')]">KYE FEATURE</h1>
+
+            </div>
+            <div >
+                            <h1 class="bg-[url('losa.png')] rounded-md pr-10">EDITIONS</h1>
+
+            </div>
+        </div>
+    </div>
+</Layout>
